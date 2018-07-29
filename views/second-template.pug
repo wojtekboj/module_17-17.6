@@ -8,7 +8,7 @@ html
             p W poniższym miejscu ukryty został Skarb. Znajdź go!
             iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.256535705018!2d23.880441866105627!3d50.8078855194255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47248f30b7bc861b%3A0xc381d9f2e61541f3!2sPark+przy+HOSiR%2C+22-500+Hrubiesz%C3%B3w!5e0!3m2!1spl!2spl!4v1532849731483', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
         else
-            p Nie posiadasz konta! Możesz założyć je poprzez poniższy formularz
+            p Wypełnij poniższy formularz aby otrzymać dostęp do tajnej zawartości
             form(
                 action='http://localhost:3000/auth/google'
                 method='get'
@@ -22,6 +22,16 @@ html
                     input(
                         type='text'
                         name='nazwisko'
+                    )
+                p e-mail: 
+                    input(
+                        type='text'
+                        name='email'
+                    )
+                p Hasło: 
+                    input(
+                        type='password'
+                        name='haslo'
                     )
                 input(
                     type='submit'
