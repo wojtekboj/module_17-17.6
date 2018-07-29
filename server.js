@@ -24,6 +24,8 @@ app.get('/auth/google', function (req, res) {
     res.render('second-template', {
         imie: req.query.imie,
         nazwisko: req.query.nazwisko,
+        email: req.query.email,
+        haslo: req.query.haslo
     });
 });
 
